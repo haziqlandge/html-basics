@@ -1,0 +1,186 @@
+body{
+    margin: 0px;
+    background-color: rgb(15, 14, 15);
+}
+p{
+    
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.ribbon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 8px 20px rgb(26, 25, 31);
+
+    height: 58px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.leftR{
+    display: flex;
+    align-items: center;
+
+    color: aliceblue;
+    
+}
+
+.menu ,.ytLogo{
+    margin-left: 20px;
+}
+.ytLogo{height: 22px;}
+.midR{
+    display: flex;
+
+    align-items: stretch;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 70px;
+    flex: 1;
+    max-width: 800px;
+    
+
+}
+.search{
+    flex: 1;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px 0 0 25px;
+    border-width: 1px;
+    padding-left: 25px;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    font-size: 16px;
+    font-family: Roboto, Arial;
+    font-weight: 400;
+}
+
+.search::placeholder{
+    font-size: 16px;
+    font-family: Roboto, Arial;
+    font-weight: 400;
+}
+.searchButton, .vnButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-right: 20px;
+    padding: 10px;
+
+    background-color: rgb(48, 48, 48);
+    border-width: 1px;
+    border-color: rgb(54, 54, 54);
+    border-style: solid;
+    box-shadow: 0 0 10px rgb(36, 30, 48);
+}
+.searchButton:hover, .vnButton:hover, .menu:hover , .ytLogo:hover{
+    cursor: pointer;
+}
+.searchButton{
+    
+    border-radius: 0 100% 100% 0;
+    margin-left: 1px;
+    padding-right: 13px;
+    
+}
+.vnButton{
+    border-radius: 100%;
+}
+.vn, .searchicon{
+
+    background-color: rgb(48, 48, 48);
+}
+.rightR{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ,.notification, .ytApps, .upload, .pchnl{
+    padding: 6px;
+    width: 28px;
+    border-radius: 100%;
+    transition: all;
+
+}
+.menu:hover,.notification:hover, .ytApps:hover, .upload:hover, .pchnl:hover{
+    cursor: pointer;
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0 0 10px rgba(40, 38, 51, 0.74);
+
+}
+.pchnl{
+    
+    padding: 0;
+    width: 40px;
+    
+}
+.boxGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+}
+
+.box{
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px rgb(47, 32, 59);
+
+    
+}
+.thumbnail{
+
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.info{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+
+}
+
+.pfp{
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.channelName, .viewsNtime{
+    line-height: 16px;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(148, 148, 148);
+}
+.channelName:hover {
+    color: lightgrey;
+    cursor: pointer;
+}
+
